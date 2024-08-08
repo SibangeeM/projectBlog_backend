@@ -40,5 +40,10 @@ app.get("/product", async (req, res) => {
   res.send(JSON.stringify(data));
 });
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Home Page!');
+});
+
 //server is ruuning
 app.listen(PORT, () => console.log("server is running at port : " + PORT));
